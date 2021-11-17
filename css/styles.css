@@ -172,6 +172,8 @@ img {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
+
+  transition: color var(--animation-duration) var(--animation-timing-function);
 }
 
 .nav-link {
@@ -276,6 +278,8 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
+  transition: background-color var(--animation-duration)
+    var(--animation-timing-function);
   cursor: pointer;
 }
 
@@ -417,6 +421,9 @@ img {
   background-color: var(--background-primary);
   border: none;
   border-radius: 50%;
+
+  transition: color var(--animation-duration) var(--animation-timing-function),
+    background-color var(--animation-duration) var(--animation-timing-function);
 }
 
 .team-socials-link:hover,
@@ -455,6 +462,9 @@ img {
 
   border: 1px solid var(--icon-primary-color);
   border-radius: 4px;
+
+  transition: color var(--animation-duration) var(--animation-timing-function),
+    border-color var(--animation-duration) var(--animation-timing-function);
 }
 
 .clients-link:hover,
@@ -496,6 +506,10 @@ img {
   border-radius: 4px;
 
   cursor: pointer;
+
+  transition: color var(--animation-duration) var(--animation-timing-function),
+    background-color var(--animation-duration) var(--animation-timing-function),
+    box-shadow var(--animation-duration) var(--animation-timing-function);
 }
 
 .filter-btn:hover,
@@ -532,6 +546,9 @@ img {
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-primary-color);
+
+  transition: box-shadow var(--animation-duration)
+    var(--animation-timing-function);
 }
 
 .portfolio-link:hover,
@@ -629,6 +646,11 @@ img {
   margin-top: 9px;
 }
 
+.address-link,
+.address-contact {
+  transition: color var(--animation-duration) var(--animation-timing-function);
+}
+
 .address-link {
   color: var(--text-tertiary-color);
 }
@@ -678,6 +700,9 @@ img {
   background-color: var(--background-footer-social);
   border: none;
   border-radius: 50%;
+
+  transition: background-color var(--animation-duration)
+    var(--animation-timing-function);
 }
 
 .socials-link:hover,
