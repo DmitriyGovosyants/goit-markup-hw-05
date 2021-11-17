@@ -179,7 +179,7 @@ img {
   color: var(--text-secondary-color);
 }
 
-.nav-link.current {
+.current {
   color: var(--accent-color);
 }
 
@@ -329,6 +329,30 @@ img {
 
 .about-item + .about-item {
   margin-left: 30px;
+}
+
+.about-thumb {
+  position: relative;
+}
+
+.about-meta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--text-tertiary-color);
+
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /* ?Our team section */
