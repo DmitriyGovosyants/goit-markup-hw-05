@@ -131,6 +131,42 @@ Basic Layout
 }
 
 /*=======================================================
+Basic components
+=======================================================*/
+/*=======================================================
+  Socials icons
+=======================================================*/
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials-item {
+  width: 44px;
+  height: 44px;
+}
+
+.socials-item + .socials-item {
+  margin-left: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  border-radius: 50%;
+}
+
+.icon-socials {
+  fill: currentColor;
+}
+
+/*=======================================================
   Header
 =======================================================*/
 .header {
@@ -415,33 +451,10 @@ Basic Layout
   margin-bottom: 16px;
 }
 
-.team-socials {
-  display: flex;
-  justify-content: center;
-}
-
-.team-socials-item {
-  width: 44px;
-  height: 44px;
-}
-
-.team-socials-item + .team-socials-item {
-  margin-left: 10px;
-}
-
 .team-socials-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  height: 100%;
-
   color: var(--icon-primary-color);
 
   background-color: var(--background-primary);
-  border: none;
-  border-radius: 50%;
 
   transition: color var(--animation-duration) var(--animation-timing-function),
     background-color var(--animation-duration) var(--animation-timing-function);
@@ -452,10 +465,6 @@ Basic Layout
   color: var(--background-primary);
 
   background-color: var(--accent-color);
-}
-
-.icon-team-socials {
-  fill: currentColor;
 }
 
 /*=======================================================
@@ -708,43 +717,18 @@ Basic Layout
   color: var(--text-tertiary-color);
 }
 
-.socials {
-  display: flex;
-}
-
-.socials-item {
-  width: 44px;
-  height: 44px;
-}
-
-.socials-item + .socials-item {
-  margin-left: 10px;
-}
-
-.socials-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-
+.footer-socials-link {
   color: var(--background-primary);
 
   background-color: var(--background-footer-social);
-  border: none;
-  border-radius: 50%;
 
   transition: background-color var(--animation-duration)
     var(--animation-timing-function);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.footer-socials-link:hover,
+.footer-socials-link:focus {
   background-color: var(--accent-color);
-}
-
-.icon-socials {
-  fill: currentColor;
 }
 
 /*=======================================================
