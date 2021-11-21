@@ -1,5 +1,6 @@
-/* Variable --------------------------------------------------------------------------- */
-
+/*=======================================================
+Variable
+=======================================================*/
 :root {
   --title-primary-color: #ffffff;
   --title-secondary-color: #212121;
@@ -25,8 +26,9 @@
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Basic Elements ----------------------------------------------------------------- */
-
+/*=======================================================
+Basic Elements
+=======================================================*/
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.17;
@@ -62,8 +64,9 @@ img {
   height: auto;
 }
 
-/* Basic Layout -------------------------------------------------------------- */
-
+/*=======================================================
+Basic Layout
+=======================================================*/
 .container {
   width: 1200px;
   margin-right: auto;
@@ -127,8 +130,9 @@ img {
   margin: -1px;
 }
 
-/* Header -----------------------------------------------------------------*/
-
+/*=======================================================
+  Header
+=======================================================*/
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -223,9 +227,12 @@ img {
   fill: currentColor;
 }
 
-/* Content studio page ---------------------------------------------------------------------*/
-
-/* ?hero section */
+/*=======================================================
+  Content studio page
+=======================================================*/
+/*=======================================================
+    Hero section
+=======================================================*/
 
 .hero-section {
   max-width: 1600px;
@@ -288,8 +295,9 @@ img {
   background-color: var(--background-hero-btn-hvr);
 }
 
-/* ?features section */
-
+/*=======================================================
+    Features section
+=======================================================*/
 .features {
   display: flex;
 
@@ -297,7 +305,7 @@ img {
 }
 
 .features-item {
-  width: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
 
   line-height: 1.71;
 }
@@ -328,10 +336,15 @@ img {
   color: var(--title-secondary-color);
 }
 
-/* ?about us section */
-
+/*=======================================================
+    About us section
+=======================================================*/
 .about {
   display: flex;
+}
+
+.about-item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .about-item + .about-item {
@@ -362,8 +375,9 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-/* ?Our team section */
-
+/*=======================================================
+    Our team section
+=======================================================*/
 .team {
   display: flex;
 
@@ -372,6 +386,8 @@ img {
 }
 
 .team-item {
+  flex-basis: calc((100% - 90px) / 4);
+
   background-color: var(--background-primary);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -404,6 +420,11 @@ img {
   justify-content: center;
 }
 
+.team-socials-item {
+  width: 44px;
+  height: 44px;
+}
+
 .team-socials-item + .team-socials-item {
   margin-left: 10px;
 }
@@ -413,8 +434,8 @@ img {
   justify-content: center;
   align-items: center;
 
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
 
   color: var(--icon-primary-color);
 
@@ -437,18 +458,20 @@ img {
   fill: currentColor;
 }
 
-/* ?Regular clients section */
-
+/*=======================================================
+    Regular clients section
+=======================================================*/
 .clients {
   display: flex;
 }
 
-.clients-item + .clients-item {
-  margin-left: 30px;
+.clients-item {
+  flex-basis: calc((100% - 150px) / 6);
+  height: 92px;
 }
 
-.clients-item {
-  width: calc((100% - 150px) / 6);
+.clients-item + .clients-item {
+  margin-left: 30px;
 }
 
 .clients-link {
@@ -456,7 +479,8 @@ img {
   justify-content: center;
   align-items: center;
 
-  height: 92px;
+  width: 100%;
+  height: 100%;
 
   color: var(--icon-primary-color);
 
@@ -478,10 +502,12 @@ img {
   fill: currentColor;
 }
 
-/* Content portfolio page ---------------------------------------------------------*/
-
-/* ?Portfolio section */
-
+/*=======================================================
+  Content portfolio page
+=======================================================*/
+/*=======================================================
+    Portfolio section
+=======================================================*/
 .filter-list {
   display: flex;
   justify-content: center;
@@ -528,7 +554,7 @@ img {
 }
 
 .portfolio-item {
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-item:not(:nth-child(3n)) {
@@ -617,7 +643,9 @@ img {
   color: var(--title-secondary-color);
 }
 
-/* Footer ------------------------------------------------------------------------ */
+/*=======================================================
+  Footer
+=======================================================*/
 
 .footer {
   padding-top: 60px;
@@ -684,6 +712,11 @@ img {
   display: flex;
 }
 
+.socials-item {
+  width: 44px;
+  height: 44px;
+}
+
 .socials-item + .socials-item {
   margin-left: 10px;
 }
@@ -692,8 +725,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
 
   color: var(--background-primary);
 
@@ -714,8 +747,9 @@ img {
   fill: currentColor;
 }
 
-/* Modal dialog box */
-
+/*=======================================================
+    Modal dialog box
+=======================================================*/
 .backdrop {
   position: fixed;
   top: 0;
